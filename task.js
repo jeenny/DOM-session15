@@ -28,6 +28,7 @@ mouse.addEventListener("mouseover", function(event) {
 
 const anchorLink = document.querySelectorAll('a');
 anchorLink.addEventListener('click', function(event2) {
+    if (event2.target.getAttribute('href').startsWith('http://bing.com')) {
         alert('are you sure you want to go to Bing...?');
-    
+    }
 });
